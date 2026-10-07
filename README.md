@@ -1,17 +1,71 @@
-# tugas3
+# E-Money - Tugas Pertemuan 3
 
-A new Flutter project.
+Implementasi Menu E-Money & Navigation menggunakan Flutter.
 
-## Getting Started
+## Identitas
 
-This project is a starting point for a Flutter application.
+| | |
+|---|---|
+| **Nama** | Farrel Gavin Azarya Fadillillah |
+| **NIM** | 152024016 |
+| **Kelas** | (isi kelas) |
+| **Mata Kuliah** | Pemrograman Mobile |
 
-A few resources to get you started if this is your first Flutter project:
+## Deskripsi
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Aplikasi E-Money sederhana yang menampilkan 16 menu layanan dalam 4 baris. Setiap menu dapat diklik dan membuka halaman yang berbeda menggunakan `Navigator.push()`. Setiap halaman tujuan memiliki `AppBar` dan nama halaman.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Daftar Menu
+
+| Baris | Menu | Halaman Tujuan |
+|---|---|---|
+| 1 | Top Up, Transfer, Scan QR, Riwayat | `TopUpPage`, `TransferPage`, `ScanQrPage`, `RiwayatPage` |
+| 2 | Pulsa & Data, Voucher Game, Transportasi, Tagihan Air | `PulsaDataPage`, `VoucherGamePage`, `TransportasiPage`, `TagihanAirPage` |
+| 3 | Listrik, TV Kabel, Streaming, Belanja Online | `ListrikPage`, `TvKabelPage`, `StreamingPage`, `BelanjaOnlinePage` |
+| 4 | Donasi, Asuransi, Investasi, Lainnya | `DonasiPage`, `AsuransiPage`, `InvestasiPage`, `LainnyaPage` |
+
+## Ketentuan yang Dipenuhi
+
+- `MenuPage` diselesaikan hingga baris terakhir.
+- Hanya memakai widget dasar: `Column`, `Row`, `Container`, `Icon`, `Text`, dan `SizedBox` (ditambah `GestureDetector` agar menu dapat diklik).
+- Tidak menggunakan reusable widget/class `MenuItem`.
+- Setiap menu membuka halaman yang berbeda dengan `Navigator.push()`.
+- Setiap halaman tujuan memiliki `AppBar` dan nama halaman.
+- Icon dan warna disesuaikan dengan fungsi masing-masing menu.
+
+## Struktur Project
+
+```
+lib/
+├── main.dart             # Titik masuk aplikasi
+├── menu_page.dart        # Halaman menu utama (16 menu)
+└── halaman_tujuan.dart   # 16 halaman tujuan
+```
+
+## Cara Menjalankan
+
+```bash
+git clone https://github.com/gavinn13/tugas3-pemrogramman-mobile.git
+cd tugas3-pemrogramman-mobile
+flutter pub get
+flutter run
+```
+
+## Cara Kerja Navigasi
+
+Menu dibungkus `GestureDetector`. Saat diklik, `Navigator.push()` menambahkan halaman tujuan ke atas tumpukan halaman (stack) dengan `MaterialPageRoute`. Tombol kembali pada `AppBar` menjalankan `Navigator.pop()` sehingga pengguna kembali ke `MenuPage`.
+
+```dart
+Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => const TopUpPage()),
+);
+```
+
+## Screenshot
+
+<!-- Tempel screenshot di bawah ini, contoh: ![MenuPage](screenshots/menu.png) -->
+
+| MenuPage | Halaman Tujuan |
+|---|---|
+| (tempel screenshot) | (tempel screenshot) |
