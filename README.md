@@ -68,4 +68,5 @@ Navigator.push(
 
 | MenuPage | Halaman Tujuan |
 |---|---|
-| (tempel screenshot) | (tempel screenshot) |
+| <img width="1360" height="801" alt="image" src="https://github.com/user-attachments/assets/ba7e36db-1d46-451b-bdcd-9c86a00948bb" />
+ | (tempel screenshot) |
