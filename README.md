@@ -8,7 +8,7 @@ Implementasi Menu E-Money & Navigation menggunakan Flutter.
 |---|---|
 | **Nama** | Farrel Gavin Azarya Fadillillah |
 | **NIM** | 152024016 |
-| **Kelas** | (isi kelas) |
+| **Kelas** | BB |
 | **Mata Kuliah** | Pemrograman Mobile |
 
 ## Deskripsi
