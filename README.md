@@ -64,10 +64,8 @@ Navigator.push(
 
 ## Screenshot
 
-<!-- Tempel screenshot di bawah ini, contoh: ![MenuPage](screenshots/menu.png) -->
+## Screenshot
 
-| MenuPage | Halaman Tujuan |
-|---|---|
-| <img width="1360" height="801" alt="image" src="https://github.com/user-attachments/assets/ba7e36db-1d46-451b-bdcd-9c86a00948bb" />
- | <img width="1918" height="981" alt="image" src="https://github.com/user-attachments/assets/16fb3bf9-a1b0-45f8-98d7-cf61bc593763" />
- |
+| MenuPage | Halaman Top Up |
+|:---:|:---:|
+| <img src="screenshots/menu.png" width="300"> | <img src="screenshots/topup.png" width="300"> |
