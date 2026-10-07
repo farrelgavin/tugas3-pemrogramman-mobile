@@ -64,6 +64,6 @@ Navigator.push(
 
 ## Screenshot
 
-| MenuPage | Halaman Top Up |
+| Halaman Menu | Halaman Tujuan |
 |:---:|:---:|
 | <img src="screenshots/menu.png" width="300"> | <img src="screenshots/topup.png" width="300"> |
